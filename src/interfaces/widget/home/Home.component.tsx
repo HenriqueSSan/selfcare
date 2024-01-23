@@ -1,7 +1,11 @@
 export function WidgetHome() {
   return (
     <main className="page">
-      <section className="container">HOME</section>
+      <section>
+        <figure>
+          <img src="/promotion-banner.jpg" alt="" />
+        </figure>
+      </section>
     </main>
   );
 }
