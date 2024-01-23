@@ -103,7 +103,9 @@
   --fz_16: #{f.$fz_16};
   --fz_18: #{f.$fz_18};
   --fz_20: #{f.$fz_20};
+  --fz_22: #{f.$fz_22};
   --fz_24: #{f.$fz_24};
+  --fz_25: #{f.$fz_25};
   --fz_26: #{f.$fz_26};
   --fz_28: #{f.$fz_28};
   --fz_32: #{f.$fz_32};
@@ -189,12 +191,13 @@ button {
   width: 100%;
   margin: 0 auto;
 
+  padding: 0 24px;
+
   @include for-laptop-up {
     width: 90%;
   }
 }
 
 .page {
-  height: var(--header-offset);
   padding-top: var(--header-height);
 }

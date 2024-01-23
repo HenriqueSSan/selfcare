@@ -1,10 +1,10 @@
-$fw_thin: '';
-$fw_light: '';
-$fw_regular: '';
+$fw_thin: 200;
+$fw_light: 300;
+$fw_regular: 400;
 $fw_medium: 500;
 $fw_semibold: 600;
 $fw_bold: 700;
-$fw_extrabold: '';
+$fw_extrabold: 800;
 
 $fz_10: 10px;
 $fz_12: 12px;
@@ -12,7 +12,9 @@ $fz_14: 14px;
 $fz_16: 16px;
 $fz_18: 18px;
 $fz_20: 20px;
+$fz_22: 22px;
 $fz_24: 24px;
+$fz_25: 25px;
 $fz_26: 26px;
 $fz_28: 28px;
 $fz_32: 32px;
@@ -26,7 +28,7 @@ $fz_60: 60px;
 $fz_64: 64px;
 $fz_72: 72px;
 
-$ff_primary: 'Poppins';
-$ff_secondary: 'Poppins';
-$ff_body: 'Poppins';
-$ff_heading: 'Poppins';
+$ff_primary: "Poppins";
+$ff_secondary: "Poppins";
+$ff_body: "Poppins";
+$ff_heading: "Poppins";
