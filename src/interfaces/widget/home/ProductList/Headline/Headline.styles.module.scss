@@ -1,0 +1,16 @@
+.group {
+  height: 85px;
+  padding: 33px 0 28px;
+  border-bottom: 0.2px solid #a5a1a1;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: var(--fz_20);
+  }
+
+  :global .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

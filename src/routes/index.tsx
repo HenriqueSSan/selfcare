@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { WidgetHome } from "../interfaces/widget/home/Home.component";
+import { WidgetHome } from "../interfaces/widget/home";
 import { InitialLayout } from "../interfaces/layout/Initial";
 
 export function Router() {

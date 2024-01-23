@@ -1,11 +1,11 @@
+import { Banner } from "./Banner";
+import { ProductList } from "./ProductList";
+
 export function WidgetHome() {
   return (
     <main className="page">
-      <section>
-        <figure>
-          <img src="/promotion-banner.jpg" alt="" />
-        </figure>
-      </section>
+      <Banner />
+      <ProductList />
     </main>
   );
 }
