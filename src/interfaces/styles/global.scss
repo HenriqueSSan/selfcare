@@ -1,0 +1,200 @@
+@use "./palette" as color;
+@use "./font" as f;
+
+@import "./breakpoint";
+@import "./mixin";
+@import "./components/button.scss";
+
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --clr-primary_100: #{color.$primary_100};
+  --clr-primary_200: #{color.$primary_200};
+  --clr-primary_300: #{color.$primary_300};
+  --clr-primary_400: #{color.$primary_400};
+  --clr-primary_500: #{color.$primary_500};
+  --clr-primary_600: #{color.$primary_600};
+  --clr-primary_700: #{color.$primary_700};
+  --clr-primary_800: #{color.$primary_800};
+  --clr-primary_900: #{color.$primary_900};
+
+  --clr-secondary_100: #{color.$secondary_100};
+  --clr-secondary_200: #{color.$secondary_200};
+  --clr-secondary_300: #{color.$secondary_300};
+  --clr-secondary_400: #{color.$secondary_400};
+  --clr-secondary_500: #{color.$secondary_500};
+  --clr-secondary_600: #{color.$secondary_600};
+  --clr-secondary_700: #{color.$secondary_700};
+  --clr-secondary_800: #{color.$secondary_800};
+  --clr-secondary_900: #{color.$secondary_900};
+
+  --clr-gray_100: #{color.$gray_100};
+  --clr-gray_200: #{color.$gray_200};
+  --clr-gray_300: #{color.$gray_300};
+  --clr-gray_400: #{color.$gray_400};
+  --clr-gray_500: #{color.$gray_500};
+  --clr-gray_600: #{color.$gray_600};
+  --clr-gray_700: #{color.$gray_700};
+  --clr-gray_800: #{color.$gray_800};
+  --clr-gray_900: #{color.$gray_900};
+
+  --clr-orange_100: #{color.$orange_100};
+  --clr-orange_200: #{color.$orange_200};
+  --clr-orange_300: #{color.$orange_300};
+  --clr-orange_400: #{color.$orange_400};
+  --clr-orange_500: #{color.$orange_500};
+  --clr-orange_600: #{color.$orange_600};
+  --clr-orange_700: #{color.$orange_700};
+  --clr-orange_800: #{color.$orange_800};
+  --clr-orange_900: #{color.$orange_900};
+
+  --clr-yellow_100: #{color.$yellow_100};
+  --clr-yellow_200: #{color.$yellow_200};
+  --clr-yellow_300: #{color.$yellow_300};
+  --clr-yellow_400: #{color.$yellow_400};
+  --clr-yellow_500: #{color.$yellow_500};
+  --clr-yellow_600: #{color.$yellow_600};
+  --clr-yellow_700: #{color.$yellow_700};
+  --clr-yellow_800: #{color.$yellow_800};
+  --clr-yellow_900: #{color.$yellow_900};
+
+  --clr-purple_100: #{color.$purple_100};
+  --clr-purple_200: #{color.$purple_200};
+  --clr-purple_300: #{color.$purple_300};
+  --clr-purple_400: #{color.$purple_400};
+  --clr-purple_500: #{color.$purple_500};
+  --clr-purple_600: #{color.$purple_600};
+  --clr-purple_700: #{color.$purple_700};
+  --clr-purple_800: #{color.$purple_800};
+  --clr-purple_900: #{color.$purple_900};
+
+  --clr-primary_hover_100: #{color.$primary_hover_100};
+  --clr-primary_hover_200: #{color.$primary_hover_200};
+  --clr-primary_hover_300: #{color.$primary_hover_300};
+  --clr-primary_hover_400: #{color.$primary_hover_400};
+  --clr-primary_hover_500: #{color.$primary_hover_500};
+  --clr-primary_hover_600: #{color.$primary_hover_600};
+  --clr-primary_hover_700: #{color.$primary_hover_700};
+  --clr-primary_hover_800: #{color.$primary_hover_800};
+  --clr-primary_hover_900: #{color.$primary_hover_900};
+
+  --clr-secondary_hover_100: #{color.$secondary_hover_100};
+  --clr-secondary_hover_200: #{color.$secondary_hover_200};
+  --clr-secondary_hover_300: #{color.$secondary_hover_300};
+  --clr-secondary_hover_400: #{color.$secondary_hover_400};
+  --clr-secondary_hover_500: #{color.$secondary_hover_500};
+  --clr-secondary_hover_600: #{color.$secondary_hover_600};
+  --clr-secondary_hover_700: #{color.$secondary_hover_700};
+  --clr-secondary_hover_800: #{color.$secondary_hover_800};
+  --clr-secondary_hover_900: #{color.$secondary_hover_900};
+
+  --fw_thin: #{f.$fw_thin};
+  --fw_light: #{f.$fw_light};
+  --fw_regular: #{f.$fw_regular};
+  --fw_medium: #{f.$fw_medium};
+  --fw_semibold: #{f.$fw_semibold};
+  --fw_bold: #{f.$fw_bold};
+  --fw_extrabold: #{f.$fw_extrabold};
+
+  --fz_10: #{f.$fz_10};
+  --fz_12: #{f.$fz_12};
+  --fz_14: #{f.$fz_14};
+  --fz_16: #{f.$fz_16};
+  --fz_18: #{f.$fz_18};
+  --fz_20: #{f.$fz_20};
+  --fz_24: #{f.$fz_24};
+  --fz_26: #{f.$fz_26};
+  --fz_28: #{f.$fz_28};
+  --fz_32: #{f.$fz_32};
+  --fz_36: #{f.$fz_36};
+  --fz_40: #{f.$fz_40};
+  --fz_44: #{f.$fz_44};
+  --fz_48: #{f.$fz_48};
+  --fz_52: #{f.$fz_52};
+  --fz_56: #{f.$fz_56};
+  --fz_60: #{f.$fz_60};
+  --fz_64: #{f.$fz_64};
+  --fz_72: #{f.$fz_72};
+
+  --ff_body: #{f.$ff_body};
+  --ff_primary: #{f.$ff_primary};
+  --ff_secondary: #{f.$ff_secondary};
+  --ff_heading: #{f.$ff_heading};
+
+  --header-height: 94px;
+
+  --header-offset: calc(100vh - var(--header-height));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff_body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff_primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+fieldset,
+button,
+textarea {
+  border: none;
+  font-family: var(--ff_body);
+}
+
+button {
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.srOnly {
+  position: absolute !important;
+  font-size: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+  line-height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include for-laptop-up {
+    width: 90%;
+  }
+}
+
+.page {
+  height: var(--header-offset);
+  padding-top: var(--header-height);
+}
