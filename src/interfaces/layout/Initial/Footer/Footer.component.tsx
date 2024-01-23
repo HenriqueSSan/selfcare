@@ -29,7 +29,7 @@ export function Footer() {
             <fieldset>
               <label htmlFor="">Newsletter</label>
 
-              <div>
+              <div className="group">
                 <input type="text" placeholder="Digite seu melhor e-mail" />
                 <button className="btn btn-primary btn-solid">Inscrever</button>
               </div>

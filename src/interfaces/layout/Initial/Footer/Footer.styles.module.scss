@@ -14,6 +14,18 @@
 
 .group-1 {
   margin-bottom: 39px;
+
+  :global .container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  :global .container {
+    @include for-laptop-up {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
 }
 
 .group-2 {
@@ -35,12 +47,17 @@
 }
 
 .newsletter {
+  :global .group {
+    display: flex;
+  }
+
   label {
     display: block;
     margin-bottom: 18px;
   }
 
   input {
+    width: 100%;
     height: 54px;
     padding: 15px 13px;
     border: 0.5px solid #d9d9d9;
